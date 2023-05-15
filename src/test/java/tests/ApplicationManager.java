@@ -18,7 +18,7 @@ public class ApplicationManager {
     protected void init() {
         WebDriverManager.firefoxdriver().setup();
         driver = new FirefoxDriver();
-        driver.get("https://demoqa.com/books");
+        driver.get("https://demoqa.com");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
